@@ -1,0 +1,45 @@
+1. git config --system: to set identity for a specific user.
+	      --local: to set identity for a specific repo.
+	      --global: to set identity for all users and for all repos.
+2. git init: To initialize a local git repo.
+3. git clone <url>: To download a remote repo into your local repo from a url. It includes the current working code along with the previous versions, history.
+4. git add <filename>: To add a file to stage area.
+       add ./ -A : To add all files in the directory to stage area.
+5. git commit -m <message>: To save the changes into the local repo with a commit message.
+       commit -a -m <message>: To commit the changes by skipping the staging area.i.e: skiping add command.
+6. git status: To get the status whether the files are tracked/untracked/staged/modified/committed.    
+       status -s/ --short: To get short version of status.
+7.git diff: To compare and track the non-staged/non-committed files from their last commit.
+      diff -statged:To compare your staged changes to your last commit.
+8. git rm <filename>: To delete a tracked file from working area and git.
+       rm -f <filename>: To delete a staged file.
+       rm --cached <filename>: To remove from staging area but not from working tree.
+9. git mv <oldfilename> <newfilename>: To rename the file.
+10. git log: To get the previous commits.
+	log -p/ --patch <noofcommits>: To display difference in code of last mentioned <noofcommits> commits.
+	log --stat: To display summary of differences.
+	refer official doc for other options.
+11. git commit --ammend: To make changes to the committed message/To add modified files to the last commit.
+12. git reset HEAD <filename>: To unstage the staged file.
+13.git checkout -- <filename>: Unmodifying a modified file.
+14. git remote: To lists out the remote repos.
+	remote -v: To lists outh the remote repos with their urls's.
+15. git remote add <alias> <url>: To add and save remote repo with alias name.
+16. git fetch <remote_alias>: To download the data from remote repo without merging.
+17. git pull < remote_alias>: To download the data from remote repo with merging.
+18. git push <remote_alias> <branch>: To push <branch> to the remote repo.
+19. git remote show <remote_alias>: To inspect remote repo.
+20. git remote rename <old_alias> <new_alias>: To rename alias of remote repo.
+21. git remote remove <remote_alias>: To remove a remote repo from local git.
+22. git remote set-url <remote_alias> <new_remote_url>: TO change the url of the existing remote repo.
+23. git tag: To lst out the existing tags.
+24. git tag -a <tag_name> -m <tag_msg>: To create a tag with the tag msg.
+	tag -a <tag_name> <checksum>: To create tags later.
+25. git show <tag_name>: To list the details of tags created.
+26. git push <remote_alias> <tag_name>: To push tags to remote repo.
+	push <remote_alias> --tags: To push all tags.
+27. git tag -d <tag_name>: To delete tag.
+28. git config --global alias.<alias_name> '<command>': TO give a shortcut name to command.
+29. rm -rf <repo_folder>/.git: To delete local repo.
+
+
